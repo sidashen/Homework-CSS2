@@ -1,0 +1,38 @@
+/* .nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: #33394a;
+} */
+.nav {
+  display: flex;
+  align-items: center;
+  background-color: #33394a;
+  height: 70px;
+}
+
+.back {
+  float: left;
+  margin-left: 3%;
+}
+
+.title {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  margin-left: 5%;
+  color: white;
+  font-size: 24px;
+}
+
+.shoppingChart {
+  float: right;
+  margin-right: 3%;
+}
+
+.banner {
+  background-image: url(../static/jay1.jpg);
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
