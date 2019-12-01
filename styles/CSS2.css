@@ -1,9 +1,3 @@
-/* .nav {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    background-color: #33394a;
-} */
 .nav {
   display: flex;
   align-items: center;
@@ -33,6 +27,72 @@
 .banner {
   background-image: url(../static/jay1.jpg);
   height: 400px;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.more {
+  position: absolute;
+  top: 450px;
+  right: 20px;
+}
+
+.more1, .more2, .more3 {
+  display: inline-block;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.more1, .more2 {
+  background-color: #323f3e;
+}
+
+.more3 {
+  background-color: #c0c8c5;
+}
+
+.tagTop, .tagBottom {
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+
+.tagTop li, .tagBottom li {
+  line-height: 35px;
+  width: 14%;
+  list-style: none;
+  text-align: center;
+  border: solid 1px #dad6d6;
+  border-radius: 50px;
+}
+
+.tagTop a, .tagBottom a {
+  text-decoration:none;
+  display:block;
+  color: #4b4b4b;
+}
+
+a:hover {
+  color: #81b6e0;
+}
+
+@media all and (max-width: 650px) {
+  .tagTop, .tagBottom {
+  flex-flow: column nowrap;
+  margin: 0px;
+  padding: 0px;
+}
+
+.tagTop li, .tagBottom li {
+  margin: 10px;
+  line-height: 35px;
+  width: 30%;
+  list-style: none;
+  text-align: center;
+  border: solid 1px #dad6d6;
+  border-radius: 50px;
 }
